@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario contacto | Diccionario Médico</title>
+    </head>
+
+    <body>
+        <header>
+            <figure>
+                <a href="../index.html"> <img id="inicio" src="../imagenes/logo.jpg" alt="Portada de la enciclopedia" height="195"></a>
+            </figure>
+            <h1>Diccionario Médico</h1>
+        </header>
+        <main>
+            <a href="../index.html">Página principal</a>
+            <h2>Contacto:</h2>
+            <p>Los campos marcados con "*" son obligatorios.</p>
+            <form action="../respuestas/respuesta_contacto.html" method="get">
+                <fieldset>
+                    <legend><strong>Mensaje:</strong></legend>
+                    <p>Los siguientes campos admiten <strong>caracteres alfanuméricos</strong> y <strong>caracteres especiales:</strong></p>
+                    <div>
+                        <label for="asunto">Asunto (*):</label>
+                        <input type="text" name="asunto" id="asunto" required>
+                    </div>
+
+                    <div>
+                        <label for="comentario">Comentario o pregunta (*):</label>
+                        <textarea name="comentario" id="comentario" rows="3" cols="35" required></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Datos personales:</strong></legend>
+                        <div>
+                            <label for="soy">Yo soy:</label>
+                            <select name="persona" id="soy" >
+                                <option value="paciente">Paciente</option>
+                                <option value="cientifico">Científico</option>
+                                <option value="medico">Médico</option>
+                                <option value="educador">Educador</option>
+                                <option value="fabricante">Fabricante</option>
+                                <option value="periodista">Periodista</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="fecha">Fecha de nacimiento:</label>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+
+                        <fieldset>
+                            <legend>Sexo:</legend>
+                                <input type="radio" name="sexo" value="Hombre" id="hombre">    
+                                <label for="hombre">Hombre</label><br>
+
+                                <input type="radio" name="sexo" value="Mujer" id="mujer">
+                                <label for="mujer">Mujer</label><br>
+
+                                <input type="radio" name="sexo" value="Otro" id="otro">
+                                <label for="otro">Otro</label><br>
+                        </fieldset>
+                        
+                        <div>
+                            <p>El siguiente campo no puede tener espacios en blanco y debe contener "@" y al menos un punto después del "@" para ser válido: <em>ej: dmedico@gmail.com</em></p>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email">
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label for="info"><strong>Deseo recibir más información:</strong></label>
+                        <input type="checkbox" name="info" id="info">  
+                    </div>
+                    
+                    <input type="submit" value="Enviar formulario">
+                   
+            </form>
+        </main>
+        <footer>
+            <a href="#inicio">Volver al principio de la página</a>
+            <p><em>&copy; 2024 - Gonzalo Ramos Sánchez y Lorena Pina Pellín para la asignatura Usabilidad y Accesibilidad del grado en Ingeniería Biomédica.</em></p>
+        </footer>
+    </body>
+</html>
