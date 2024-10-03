@@ -17,25 +17,32 @@
             <h2>Solicitud de publicación:</h2>
             <p>Los campos marcados con "*" son obligatorios.</p>
             <form action="../respuestas/respuesta_publicacion.html" method="get">
+                <p>Este campo solo puede contener letras minúsculas y mayúsculas y debe ocupar menos de 100 caracteres.</p>
                 <div>
                     <label for="tituloarticulo">Título del artículo (*):</label>
-                    <textarea name="tituloarticulo" id="tituloarticulo" rows="1" cols="30" required></textarea>
+                    <textarea name="tituloarticulo" id="tituloarticulo" rows="1" cols="30" required pattern=[a-z][A-Z]{1-100} title="No se pueden utilizar números ni caracteres especiales. Debe ocupar menos de 100 caracteres"></textarea>
                 </div>
-
-                <p>
+                
+                <p>Este campo solo puede contener letras minúsculas y mayúsculas y debe ocupar menos de 500 caracteres.</p>
+                <div>
+                    <label for="opiniondiccionario">Pequeño resumen del artículo:</label>
+                    <textarea name="resumen" id="resumen" rows="3" cols="30" pattern=[a-z][A-Z]{1-500} title="No se pueden utilizar números ni caracteres especiales. Debe ocupar menos de 500 caracteres"></textarea>
+                </div>
+                
+                <div>
                     <label for="nsecciones">Secciones que desea incluir (*):</label>
                     <input type="number" id="nsecciones" name="nsecciones" min="0" max="5" step="1" value="0" required>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <label for="nfotos">Cantidad de fotos que desea incluir (*):</label>
                     <input type="number" id="nfotos" name="nfotos" min="0" max="5" step="1" value="0" required>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <label for="color">Color de fondo: </label>
                     <input type="color" name="color" id="color">
-                </p>
+                </div>
 
                 <div>
                     <label for="especialidad">Especialidad:</label>
@@ -53,11 +60,11 @@
                     <input type="date" name="fecha" id="fecha">
                 </div>   
                 
-                <p>
+                <div>
                     <label for="vol">Evalúe nuestro Diccionario Médico (de 0 a 5):</label>
                     <input type="range" id="vol" name="vol" min="0" max="5" step="0.5" value="0" onchange="document.getElementById('outvol').value=value" list="tickmarks">
                     <output id="outvol" name="outvol" for="vol">0</output>
-                </p>     
+                </div>     
                 <datalist id="tickmarks">
                     <option value="0"></option>
                     <option value="1"></option>
@@ -66,11 +73,7 @@
                     <option value="4"></option>
                     <option value="5"></option>
                 </datalist>            
-                
-                <div>
-                    <label for="opiniondiccionario">Sugerencias de mejora:</label>
-                    <textarea name="opiniondiccionario" id="opiniondiccionario" rows="3" cols="30"></textarea>
-                </div>
+             
 
                 <div>
                     <p>El siguiente campo no puede tener espacios en blanco y debe contener "@" y al menos un punto después del "@" para ser válido.</p>
