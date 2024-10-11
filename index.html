@@ -16,10 +16,25 @@
             
             <h2>Enciclopedia médica</h2>
             <p>Diccionario Médico es un servicio informativo en línea de salud para pacientes, familiares y amigos, desarrollado por los alumnos del grado de Ingeniería Biomédica de la Universidad de Alicante. </p>
-            <p><a href="mapa.html">Mapa del sitio web</a></p>
-            <p><a href="formularios/form_buscador.html">Buscador</a></p>
-            <p><a href="formularios/form_publicacion.html">Solicitud de publicación</a></p>
+            <nav>
+                <h3>Índice:</h3>
+                <ul>
+                  <li><a href="#mapaWeb">Mapa del sitio web</a></li>
+                  <li><a href="#buscador">Buscador</a></li>
+                  <li><a href="#publicacion">Solicitud de publicación</a></li>
+                  <li><a href="#indiceArticulos">Índice de artículos</a></li>
+                  <li><a href="#articulosDestacados">Artículos destacados</a></li>
+                  <li><a href="#diccionariosAlternativos">Propuestas de otros diccionarios médicos</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <p><a href="mapa.html" id="mapaWeb">Mapa del sitio web</a></p>
+            <p><a href="formularios/form_buscador.html" id="buscador">Buscador</a></p>
+            <p><a href="formularios/form_publicacion.html" id="publicacion">Solicitud de publicación</a></p>
         </main>
+        <section id="indiceArticulos">
+        <h3>Índice de artículos:</h3>
         <nav>
             <ul>
                 <li><a href="indices/indice_A.html">A</a></li>
@@ -51,7 +66,10 @@
                 <li><a href="error.html">Z</a></li>
             </ul>
         </nav>
+        </section>
+        
         <aside>
+            <section id="articulosDestacados">
             <h3>Artículos destacados</h3>
             
             <article>
@@ -83,11 +101,12 @@
                 <h4><a href="l/lupus.html">Lupus</a></h4>
                 <p>El lupus es una enfermedad que se presenta cuando el sistema inmunitario del cuerpo ataca tus propios tejidos y órganos (enfermedad autoinmunitaria). La inflamación que causa el lupus puede afectar a distintos sistemas y órganos del cuerpo, como las articulaciones, la piel, los riñones, las células sanguíneas, el cerebro, el corazón y los pulmones.</p>
             </article>
-            
-            <p>Aquí te proponemos dos alternativas a nuestro diccionario médico: <a href="https://medlineplus.gov/spanish/">MedlinePlus</a> y <a href="https://www.mayoclinic.org/es">MayoClinic</a></p>
+            </section>
+            <p  id="diccionariosAlternativos">Aquí te proponemos dos alternativas a nuestro diccionario médico: <a href="https://medlineplus.gov/spanish/">MedlinePlus</a> y <a href="https://www.mayoclinic.org/es">MayoClinic</a></p>
         </aside>
-        <a href="formularios/form_contacto.html">Contacto</a>
+        <a href="formularios/form_contacto.html"  id="contacto">Contacto</a>
         <footer>
+            <p><a href="mapa.html">Mapa del sitio web</a></p>
             <a href="#inicio">Volver al principio de la página</a>
             <p><em>&copy; 2024 - Gonzalo Ramos Sánchez y Lorena Pina Pellín para la asignatura Usabilidad y Accesibilidad del grado en Ingeniería Biomédica.</em></p>
         </footer>
