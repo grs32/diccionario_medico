@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Formulario contacto | Diccionario Médico</title>
+        <link href="../css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/formularios.css">
     </head>
 
     <body>
@@ -49,7 +51,7 @@
                             <input type="date" name="fecha" id="fecha">
                         </div>
 
-                        <fieldset>
+                        <fieldset class="fieldset-interior">
                             <legend>Sexo:</legend>
                                 <input type="radio" name="sexo" value="Hombre" id="hombre">    
                                 <label for="hombre">Hombre</label><br>
@@ -68,12 +70,13 @@
                         </div>
                     </fieldset>
 
-                    <div>
+                    <div class="peticion">                           
                         <label for="info"><strong>Deseo recibir más información:</strong></label>
                         <input type="checkbox" name="info" id="info">  
                     </div>
                     
-                    <input type="submit" value="Enviar formulario">
+                    
+                    <input type="submit" class="boton-enviar" value="Enviar formulario">
                    
             </form>
         </main>
