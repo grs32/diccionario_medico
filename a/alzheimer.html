@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Alzheimer | Diccionario Médico</title>
-        <link href="../css/index.css" rel="stylesheet">
+        <link href="../css/plantilla.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/tablas.css"> 
     </head>
     <body>
@@ -13,27 +13,11 @@
             </figure>
             <h1>Diccionario Médico</h1>
         </header>
-        <main>
+        <div id="contenedor_principal">
+        <main class="doscolumnas">
             <p>Estás en: <a href="../index.html">Página principal</a> → <a href="../indices/indice_A.html">Índice de la letra A</a> → <a href="#">Alzheimer</a></p>
             <h2>... Alzheimer </h2>
             <p>El Alzheimer es un trastorno cerebral que destruye lentamente la memoria y la capacidad de pensar y, con el tiempo, la habilidad de llevar a cabo incluso las tareas más sencillas. Las personas con Alzheimer también experimentan cambios en la conducta y la personalidad.</p>
-            <nav>
-                <h3>Índice:</h3>
-                <ul>
-                  <li><a href="#detallesAlzheimer">Detalles del Alzheimer</a>
-                    <ul>
-                        <li><a href="#causas">Causas</a></li>
-                        <li><a href="#sintomasSignos">Síntomas y signos</a></li>
-                        <li><a href="#pruebasExamenes">Pruebas y exámenes</a></li>
-                        <li><a href="#tratamientos">Tratamientos</a></li>
-                        <li><a href="#expectativas">Expectativas</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#fasesAlzheimer">Diferentes fases que puede presentar la enfermedad</a></li>
-                  <li><a href="#terapiaAlzheimer">Una nueva terapia para el Alzheimer</a></li>
-                  <li><a href="#cerebroAlzheimer">Cómo se relaciona el alzheimer con las diferentes partes del cerebro</a></li>
-                </ul>
-            </nav>
             <figure>
                 <img src="../imagenes/alzheimer.webp" alt = "Paciente de Alzheimer" height="200">
             </figure>
@@ -115,7 +99,7 @@
 
             <section id="cerebroAlzheimer">
             <h3>Cómo se relaciona el alzheimer con las diferentes partes del cerebro:</h3>
-            <aside>
+            <section>
                 <img src="../imagenes/mapaalzheimer.png" alt="Mapa interactivo de partes del cerebro" usemap="#mapaalzheimer" height="400">
                 <map name = "mapaalzheimer"> 
 
@@ -144,13 +128,33 @@
                     coords="357,282,391,263,473,357,450,369,395,310" shape="poly"> 
 
                 </map>
-            </aside>
+            </section>
             </section>
         </main>
-        
+        <aside>
+            <nav>
+                <h3>Índice:</h3>
+                <ul>
+                  <li><a href="#detallesAlzheimer">Detalles del Alzheimer</a>
+                    <ul>
+                        <li><a href="#causas">Causas</a></li>
+                        <li><a href="#sintomasSignos">Síntomas y signos</a></li>
+                        <li><a href="#pruebasExamenes">Pruebas y exámenes</a></li>
+                        <li><a href="#tratamientos">Tratamientos</a></li>
+                        <li><a href="#expectativas">Expectativas</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#fasesAlzheimer">Diferentes fases que puede presentar la enfermedad</a></li>
+                  <li><a href="#terapiaAlzheimer">Una nueva terapia para el Alzheimer</a></li>
+                  <li><a href="#cerebroAlzheimer">Cómo se relaciona el alzheimer con las diferentes partes del cerebro</a></li>
+                </ul>
+            </nav>
+        </aside>
         <footer>
-            <p><a href="../mapa.html">Mapa del sitio web</a></p>
-            <a href="#inicio">Volver al principio de la página</a>
+            <div class="enlaces">
+            <p><a href="mapa.html" class="boton-enlace" >Mapa del sitio web</a></p>
+            <p><a href="#inicio" class="boton-enlace">Volver al principio de la página</a></p>
+            </div>
             <p><em>&copy; 2024 - Gonzalo Ramos Sánchez y Lorena Pina Pellín para la asignatura Usabilidad y Accesibilidad del grado en Ingeniería Biomédica.</em></p>
         </footer>
     </body>
