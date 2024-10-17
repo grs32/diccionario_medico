@@ -120,10 +120,3 @@ a:hover a:active {
 background: var(--color_titulos);
 color: var(--color_resaltado);
 }
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-    #destacados article {
-        flex: 1 1 100%; /* En pantallas pequeñas, cada artículo ocupará el 100% del ancho */
-    }
-}
-
