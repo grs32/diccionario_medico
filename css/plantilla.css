@@ -117,10 +117,16 @@ a:hover, a:active {
     font-family: "Times New Roman", Tahoma, Arial, Verdana, Helvetica;
     padding: 0.5em 1em;
     margin: 0;
-    display: inline-block
-    
+    display: inline-block   
 }
+
 .boton-enlace:hover, .boton-enlace:active {
 background: var(--color_titulos);
 color: var(--color_resaltado);
+}
+
+.enlaces{
+    display:flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
