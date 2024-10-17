@@ -29,29 +29,6 @@ header img{
     padding: 0;
 }
 
-#contenedor_principal{
-    display: flex;
-    width: 90%;
-    margin:0 auto;
-    padding:0;
-    justify-content: space-between;
-}
-
-main{ 
-    width:75%;
-    left:0em;
-    padding-right: 1em;
-}
-
-aside{
-    width:25%;
-    right:0em;
-}
-
-footer{
-    width:100%;
-}
-
 /* Títulos y párrafos */
 h1{
     text-align: center;
@@ -61,9 +38,6 @@ h1{
     border-radius: 7px;
 }
 
-
-
-
 /* Enlaces */
 a {
     color: var(--color_titulos_2);
@@ -71,6 +45,7 @@ a {
     font-size: 1em;
     text-decoration: none;
 }
+
 a:hover a:active {
     text-decoration: underline ;
     color: #000000;
@@ -90,8 +65,6 @@ a:hover a:active {
     text-align: center;
     padding: 4px;
 }
-
-
 
 /* Índice de letras */
 #indiceArticulos a {
@@ -120,27 +93,6 @@ a:hover a:active {
     width: 100%;
 }
 
-/* Artículos destacados */
-#destacados {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los artículos se envuelvan en varias filas */
-    justify-content: space-between; /* Añade espacio entre columnas */
-}
-
-#destacados article {
-    flex: 1 1 48%; /* Cada artículo ocupará aproximadamente el 48% del ancho */
-    margin: 10px 0; /* Un pequeño margen entre los artículos */
-}
-
-#destacados figure {
-    text-align: center;
-}
-
-/* Ajuste de las imágenes */
-#destacados img {
-    max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del artículo */
-    height: auto;
-}
 /* Cambiar enlaces por botones*/
 .boton-enlace {
     background: var(--color_resaltado);
