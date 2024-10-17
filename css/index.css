@@ -1,0 +1,44 @@
+#contenedor_principal{
+    display: flex;
+    width: 90%;
+    margin:0 auto;
+    padding:0;
+    justify-content: space-between;
+}
+
+main{ 
+    width:75%;
+    left:0em;
+    padding-right: 1em;
+}
+
+aside{
+    width:25%;
+    right:0em;
+}
+
+footer{
+    width:100%;
+}
+
+/* Artículos destacados */
+#destacados {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los artículos se envuelvan en varias filas */
+    justify-content: space-between; /* Añade espacio entre columnas */
+}
+
+#destacados article {
+    flex: 1 1 48%; /* Cada artículo ocupará aproximadamente el 48% del ancho */
+    margin: 10px 0; /* Un pequeño margen entre los artículos */
+}
+
+#destacados figure {
+    text-align: center;
+}
+
+/* Ajuste de las imágenes */
+#destacados img {
+    max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del artículo */
+    height: auto;
+}
