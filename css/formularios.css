@@ -1,0 +1,59 @@
+form {
+    width: 90%;
+    padding: 1em 1em;
+    margin: 0 auto;
+}
+fieldset {
+    border: 3px solid #DAADD7;
+    background: #f4f2ff;
+    width: 90%;
+    padding: 1em 1em;
+    margin: 0 auto;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+    color: #3E7396;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 50%;
+    padding: 5px;
+}
+.fieldset-interior {
+    border: 3px dotted #DAADD7;
+    width: 25%;
+    padding: 0em 1em;
+    margin: 0 ;
+    
+}
+.boton-enviar {
+        background: #3E7396;
+        color: #DAADD7;
+        border: 3px solid #DAADD7;
+        border-radius: 3em;
+        font-weight: bold;
+        font-size: 1em;
+        font-family: "Times New Roman", Tahoma, Arial, Verdana, Helvetica;
+        padding: 0.5em 1em;
+        margin: 0 25%;
+        display: inline-block
+        
+    }
+.boton-enviar:hover {
+    background: #DAADD7;
+    color: #3E7396;
+}
+.peticion {
+    width: 90%;
+    padding: 1em 1em;
+    margin: 0 auto;
+}
