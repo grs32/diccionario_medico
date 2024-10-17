@@ -25,12 +25,31 @@ header{
     padding: 0;
     width: 100%;
 }
+
+figure{
+    text-align: center;
+}
+
+figure img{
+    display: inline;
+    width: 100%;
+    max-width: 300px;
+}
+
 header img{
     display: block;
     width: 100%;
     max-height: 200px;
     margin: 0;
     padding: 0;
+}
+
+
+iframe{
+    display: inline;
+    width: 100%;
+    aspect-ratio: 16/9;
+    max-width: 300px;
 }
 
 #contenedor_principal{
