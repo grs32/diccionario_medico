@@ -43,3 +43,12 @@ aside{
     max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del artículo */
     height: auto;
 }
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #destacados article {
+        flex: 1 1 100%; /* En pantallas pequeñas, cada artículo ocupará el 100% del ancho */
+    }
+}
+
+
