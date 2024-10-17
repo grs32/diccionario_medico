@@ -1,6 +1,6 @@
 #contenedor_principal{
     display: flex;
-    width: 90%;
+    width: 100%;
     margin:0 auto;
     padding:0;
     justify-content: space-between;
