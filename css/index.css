@@ -64,10 +64,16 @@ h1{
 
 
 
-
-
+/* Enlaces */
+a {
+    color: var(--color_titulos_2);
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+}
 a:hover {
-    color: black;
+    text-decoration: underline ;
+    color: #000000;
 }
 
 /* Listas */
@@ -135,7 +141,25 @@ a:hover {
     max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del artículo */
     height: auto;
 }
-
+/* Cambiar enlaces por botones*/
+.boton-enlace {
+    background: var(--color_resaltado);
+    color: var(--color_titulos);
+    border: 3px solid var(--color_titulos);
+    font-weight: bold;
+    border-radius: 3em;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: "Times New Roman", Tahoma, Arial, Verdana, Helvetica;
+    padding: 0.5em 1em;
+    margin: 0;
+    display: inline-block
+    
+}
+.boton-enlace:hover {
+background: var(--color_titulos);
+color: var(--color_resaltado);
+}
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     #destacados article {
