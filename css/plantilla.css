@@ -6,6 +6,10 @@
     --color_resaltado: #daadd7;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 /* Aplicamos los colores */
 body{
     background-color: var(--color_fondo);
