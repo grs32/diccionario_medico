@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Lupus eritematoso sistémico | Diccionario Médico</title>
-        <link href="../css/index.css" rel="stylesheet">
+        <link href="../css/plantilla.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -12,26 +12,11 @@
             </figure>
             <h1>Diccionario Médico</h1>
         </header>
-        <main>
+        <div id="contenedor_principal">
+        <main class="doscolumnas">
             <p>Estás en: <a href="../index.html">Página principal</a> → <a href="../indices/indice_L.html">Índice de la letra L</a> → <a href="#">Lupus</a></p>
             <h2>... Lupus eritematoso sistémico </h2>
             <p>El lupus es una enfermedad que se presenta cuando el sistema inmunitario del cuerpo ataca tus propios tejidos y órganos (enfermedad autoinmunitaria). La inflamación que causa el lupus puede afectar a distintos sistemas y órganos del cuerpo, como las articulaciones, la piel, los riñones, las células sanguíneas, el cerebro, el corazón y los pulmones.</p>
-            <nav>
-                <h3>Índice:</h3>
-                <ul>
-                  <li><a href="#detallesLupus">Detalles del Lupus eritematoso sistémico</a>
-                    <ul>
-                        <li><a href="#causas">Causas</a></li>
-                        <li><a href="#sintomasSignos">Síntomas y signos</a></li>
-                        <li><a href="#pruebasExamenes">Pruebas y exámenes</a></li>
-                        <li><a href="#tratamientos">Tratamientos</a></li>
-                        <li><a href="#expectativas">Expectativas</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#cuidarLupus">Cómo cuidar a personas con Lupus</a></li>
-                  <li><a href="#sintomasLupus">Síntomas del Lupus</a></li>
-                </ul>
-            </nav>
             <figure>
                 <img src="../imagenes/lupus.webp" alt = "Paciente con Lupus" height="200">
             </figure>
@@ -72,7 +57,7 @@
             </section>
             <section id="sintomasLupus">
             <h3>Mapa con los síntomas del Lupus:</h3>
-            <aside>
+            <section id="mapa_interactivo>
                 <img src="../imagenes/mapalupus.png" alt="Mapa interactivo de los síntomas del lupus" usemap="#mapalupus">
                 <map name = "mapalupus"> 
 
@@ -101,12 +86,32 @@
                     coords="620,123,780,25,935,123,935,318,780,420,620,318,620,123" shape="poly"> 
 
                 </map>
-            </aside>
+            </section>
             </section>
         </main>
+        <aside>
+            <nav>
+                <h3>Índice:</h3>
+                <ul>
+                  <li><a href="#detallesLupus">Detalles del Lupus eritematoso sistémico</a>
+                    <ul>
+                        <li><a href="#causas">Causas</a></li>
+                        <li><a href="#sintomasSignos">Síntomas y signos</a></li>
+                        <li><a href="#pruebasExamenes">Pruebas y exámenes</a></li>
+                        <li><a href="#tratamientos">Tratamientos</a></li>
+                        <li><a href="#expectativas">Expectativas</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#cuidarLupus">Cómo cuidar a personas con Lupus</a></li>
+                  <li><a href="#sintomasLupus">Síntomas del Lupus</a></li>
+                </ul>
+            </nav>
+        </aside>
         <footer>
-            <p><a href="../mapa.html">Mapa del sitio web</a></p>
-            <a href="#inicio">Volver al principio de la página</a>
+            <div class="enlaces">
+            <p><a href="mapa.html" class="boton-enlace" >Mapa del sitio web</a></p>
+            <p><a href="#inicio" class="boton-enlace">Volver al principio de la página</a></p>
+            </div>
             <p><em>&copy; 2024 - Gonzalo Ramos Sánchez y Lorena Pina Pellín para la asignatura Usabilidad y Accesibilidad del grado en Ingeniería Biomédica.</em></p>
         </footer>
     </body>
