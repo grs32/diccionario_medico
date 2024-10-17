@@ -71,7 +71,7 @@ a {
     font-size: 1em;
     text-decoration: none;
 }
-a:hover {
+a:hover a:active {
     text-decoration: underline ;
     color: #000000;
 }
@@ -156,7 +156,7 @@ a:hover {
     display: inline-block
     
 }
-.boton-enlace:hover {
+.boton-enlace:hover, .boton-enlace:active {
 background: var(--color_titulos);
 color: var(--color_resaltado);
 }
