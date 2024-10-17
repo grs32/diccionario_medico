@@ -19,7 +19,7 @@ th, td {
 
 /* Estilo específico para los encabezados */
 th {
-    background-color: #41799E; /* Fondo diferente para los encabezados */
+    background-color: #3E7396; /* Fondo diferente para los encabezados */
     color: white; /* Texto blanco para mayor contraste */
 }
 
@@ -33,5 +33,5 @@ caption {
 
 /* Estilo para alternar colores en las filas del cuerpo de la tabla */
 tbody tr:nth-child(even) {
-    background-color: #E0E3EE; /* Color gris claro para filas pares */
+    background-color: #F0F1FF; /* Color gris claro para filas pares */
 }
