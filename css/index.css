@@ -1,0 +1,143 @@
+/* Definición de variables */
+:root{
+    --color_fondo: #F0F1FF;
+    --color_titulos: #3E7396;
+    --color_titulos_2: #244059;
+    --color_resaltado: #daadd7;
+}
+
+/* Aplicamos los colores */
+body{
+    background-color: var(--color_fondo);
+}
+
+h2, h3, h4 {
+    color: var(--color_titulos)
+}
+
+/* Secciones */
+header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header img{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor_principal{
+    display: flex;
+    width:100%;
+    margin:0;
+    padding:0;
+    justify-content: space-between;
+}
+
+main{ 
+    width:75%;
+    left:0em;
+    padding-right: 1em;
+}
+
+aside{
+    width:25%;
+    right:0em;
+}
+
+footer{
+    width:100%;
+}
+
+/* Títulos y párrafos */
+h1{
+    text-align: center;
+    font-size: 1.25em;
+    font-family: Arial, Verdana, Tahoma, Helvetica;
+    border-bottom: 4px solid var(--color_resaltado);
+    border-radius: 7px;
+}
+
+
+
+
+
+
+a:hover {
+    color: black;
+}
+
+/* Listas */
+.horizontal li{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal a{
+    margin: 0;
+    color: #FFFFFF;
+    background-color: var(--color_titulos);
+    text-align: center;
+    padding: 4px;
+}
+
+
+
+/* Índice de letras */
+#indiceArticulos a {
+    text-decoration: none;
+}
+
+#indiceArticulos li a:hover, #indiceArticulos li a:active{
+    background-color: var(--color_titulos_2)
+}
+
+#indiceArticulos ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    width:100%;
+    
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#indiceArticulos ul.clearfix {
+    width: 100%;
+}
+
+/* Artículos destacados */
+#destacados {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los artículos se envuelvan en varias filas */
+    justify-content: space-between; /* Añade espacio entre columnas */
+}
+
+#destacados article {
+    flex: 1 1 48%; /* Cada artículo ocupará aproximadamente el 48% del ancho */
+    margin: 10px 0; /* Un pequeño margen entre los artículos */
+}
+
+#destacados figure {
+    text-align: center;
+}
+
+/* Ajuste de las imágenes */
+#destacados img {
+    max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del artículo */
+    height: auto;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #destacados article {
+        flex: 1 1 100%; /* En pantallas pequeñas, cada artículo ocupará el 100% del ancho */
+    }
+}
