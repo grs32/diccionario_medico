@@ -45,10 +45,23 @@ aside{
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 814px) {
     #destacados article {
         flex: 1 1 100%; /* En pantallas pequeñas, cada artículo ocupará el 100% del ancho */
     }
-}
 
+    #contenedor_principal {
+        display: flex; 
+        flex-direction:column-reverse;
+        width: 100%; 
+    }
+
+    main, aside {
+        width: 100%; 
+    }
+
+    aside {
+        margin-bottom: 20px; 
+    }
+}
 
