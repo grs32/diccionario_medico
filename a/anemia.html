@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Anemia | Diccionario Médico</title>
-        <link href="../css/index.css" rel="stylesheet">
+        <link href="../css/plantilla.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/tablas.css">
     </head>
     <body>
@@ -13,25 +13,11 @@
             </figure>
             <h1>Diccionario Médico</h1>
         </header>
-        <main>
+        <div id="contenedor_principal">
+        <main class="doscolumnas">
             <p>Estás en: <a href="../index.html">Página principal</a> → <a href="../indices/indice_A.html">Índice de la letra A</a> → <a href="#">Anemia</a></p>
             <h2>... Anemia</h2>
             <p>La anemia es una enfermedad en la que el número de glóbulos rojos, o la concentración de hemoglobina en los glóbulos rojos, es inferior a lo normal. Afecta sobre todo a mujeres, niños y niñas. La anemia se produce cuando no hay suficiente hemoglobina en el cuerpo para transportar oxígeno a los órganos y tejidos.</p>
-            <nav>
-                <h3>Índice:</h3>
-                <ul>
-                  <li><a href="#detallesAnemia">Detalles de la Anemia</a>
-                    <ul>
-                        <li><a href="#causas">Causas</a></li>
-                        <li><a href="#sintomasSignos">Síntomas y signos</a></li>
-                        <li><a href="#pruebasExamenes">Pruebas y exámenes</a></li>
-                        <li><a href="#tratamientos">Tratamientos</a></li>
-                        <li><a href="#expectativas">Expectativas</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#gravedadAnemia">Cómo identificar la gravedad de la anemia</a></li>
-                </ul>
-            </nav>
             <figure>
                 <img src="../imagenes/anemia.avif" height="200" alt="Mujer cansada y glóbulos rojos">
             </figure>
@@ -114,9 +100,28 @@
             </table>
             </section>
         </main>
+        <aside>
+            <nav>
+                <h3>Índice:</h3>
+                <ul>
+                  <li><a href="#detallesAnemia">Detalles de la Anemia</a>
+                    <ul>
+                        <li><a href="#causas">Causas</a></li>
+                        <li><a href="#sintomasSignos">Síntomas y signos</a></li>
+                        <li><a href="#pruebasExamenes">Pruebas y exámenes</a></li>
+                        <li><a href="#tratamientos">Tratamientos</a></li>
+                        <li><a href="#expectativas">Expectativas</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#gravedadAnemia">Cómo identificar la gravedad de la anemia</a></li>
+                </ul>
+            </nav>
+        </aside>
         <footer>
-            <p><a href="../mapa.html">Mapa del sitio web</a></p>
-            <a href="#inicio">Volver al principio de la página</a>
+            <div class="enlaces">
+            <p><a href="mapa.html" class="boton-enlace" >Mapa del sitio web</a></p>
+            <p><a href="#inicio" class="boton-enlace">Volver al principio de la página</a></p>
+            </div>
             <p><em>&copy; 2024 - Gonzalo Ramos Sánchez y Lorena Pina Pellín para la asignatura Usabilidad y Accesibilidad del grado en Ingeniería Biomédica.</em></p>
         </footer>
     </body>
