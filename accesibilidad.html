@@ -35,35 +35,57 @@
         <section>
             <h3>Características de Accesibilidad Implementadas</h3>
             <ul>
-                <li><strong>Idioma Principal Identificado:</strong> El idioma principal de todo el sitio web está correctamente etiquetado en el atributo <code>lang="es"</code> de la etiqueta <code>&lt;html&gt;</code>. <br>
-                <em>Criterio de conformidad:</em> 3.1.1 <em>Language of Page</em> (A)</li>
+                <li><strong>Contraste:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.4.3 <em>Contrast (Mínimo)</em> (AA) <br>
+                El color del texto y del fondo tiene un contraste mínimo de 4.5:1 para el texto normal y 3:1 para el texto grande. En la página web, los colores elegidos entre el fondo y el texto aseguran una adecuada legibilidad para los usuarios con baja visión o daltonismo. El CSS aplicado permite mantener este contraste en todas las páginas del diccionario.</li>
 
-                <li><strong>Etiquetado Semántico:</strong> Se han utilizado etiquetas semánticas de HTML5 para estructurar las páginas. Las etiquetas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, y <code>&lt;footer&gt;</code> se han implementado para mejorar la navegación por parte de usuarios de lectores de pantalla. <br>
-                <em>Criterio de conformidad:</em> 1.3.1 <em>Info and Relationships</em> (A)</li>
+                <li><strong>Foco visible:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.7 <em>Focus Visible</em> (AA) <br>
+                Cuando un elemento interactivo (como un enlace o un botón) es seleccionado o navegado mediante teclado, el CSS asegura que se visualice un borde visible o un cambio de color, facilitando la navegación a los usuarios que utilizan tecnologías asistivas o que prefieren utilizar el teclado.</li>
 
-                <li><strong>Texto Alternativo en Imágenes:</strong> Todas las imágenes del sitio web tienen textos alternativos (<code>alt</code>) descriptivos o nulos cuando son decorativas. Esto asegura que los usuarios con discapacidades visuales puedan acceder a la información representada por las imágenes. <br>
-                <em>Criterio de conformidad:</em> 1.1.1 <em>Non-text Content</em> (A)</li>
+                <li><strong>Propósito de los Enlaces Claro:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.4 <em>Link Purpose (In Context)</em> (A) <br>
+                El propósito de cada enlace es claramente identificable por su texto y contexto, para facilitar la comprensión a los usuarios. Ejemplo: <a href="#inicio">Volver al inicio</a>.</li>
 
-                <li><strong>Encabezados Jerárquicos Correctamente Implementados:</strong> Se ha respetado la jerarquía correcta de los encabezados (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) en las páginas, lo que facilita la navegación para los usuarios que dependen de la estructura de la página para entender el contenido. <br>
-                <em>Criterio de conformidad:</em> 2.4.6 <em>Headings and Labels</em> (AA) y 2.4.10 <em>Section Headings</em> (AAA)</li>
+                <li><strong>Encabezados Jerárquicos Correctamente Implementados:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.6 <em>Headings and Labels</em> (AA) y 2.4.10 <em>Section Headings</em> (AAA) <br>
+                Se ha respetado la jerarquía correcta de los encabezados (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) en las páginas, lo que facilita la navegación para los usuarios que dependen de la estructura de la página para entender el contenido.</li>
 
-                <li><strong>Propósito de los Enlaces Claro:</strong> El propósito de cada enlace es claramente identificable por su texto y contexto, para facilitar la comprensión a los usuarios. Ejemplo: <a href="#inicio">Volver al inicio</a>. <br>
-                <em>Criterio de conformidad:</em> 2.4.4 <em>Link Purpose (In Context)</em> (A)</li>
+                <li><strong>Orden de Foco Secuencial:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.3 <em>Focus Order</em> (A) <br>
+                Se ha implementado un orden de foco lógico y secuencial en todos los elementos interactivos, lo que permite navegar a través del contenido de manera predecible.</li>
 
-                <li><strong>Orden de Foco Secuencial:</strong> Se ha implementado un orden de foco lógico y secuencial en todos los elementos interactivos, lo que permite navegar a través del contenido de manera predecible. <br>
-                <em>Criterio de conformidad:</em> 2.4.3 <em>Focus Order</em> (A)</li>
+                <li><strong>Mapas del sitio:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.5 <em>Multiple Ways</em> (AA) <br>
+                Se ha implementado un mapa del sitio para mejorar la navegación.</li>
 
-                <li><strong>Formularios Accesibles:</strong> Los formularios en el sitio web están correctamente etiquetados mediante la etiqueta <code>&lt;label&gt;</code> asociada a los controles, y se han proporcionado instrucciones claras para el uso de los mismos. <br>
-                <em>Criterio de conformidad:</em> 3.3.2 <em>Labels or Instructions</em> (A), 1.3.5 <em>Identify Input Purpose</em> (AA)</li>
+                <li><strong>Tablas Accesibles:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.3.1 <em>Info and Relationships</em> (A) <br>
+                Todas las tablas están correctamente etiquetadas usando las etiquetas <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, y <code>&lt;caption&gt;</code> para asegurar que los usuarios de tecnologías asistivas comprendan la estructura de los datos.</li>
 
-                <li><strong>Tablas Accesibles:</strong> Todas las tablas están correctamente etiquetadas usando las etiquetas <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, y <code>&lt;caption&gt;</code> para asegurar que los usuarios de tecnologías asistivas comprendan la estructura de los datos. <br>
-                <em>Criterio de conformidad:</em> 1.3.1 <em>Info and Relationships</em> (A)</li>
+                <li><strong>Formularios Accesibles:</strong> <br>
+                <em>Criterio de conformidad:</em> 3.3.2 <em>Labels or Instructions</em> (A), 1.3.5 <em>Identify Input Purpose</em> (AA) <br>
+                Los formularios en el sitio web están correctamente etiquetados mediante la etiqueta <code>&lt;label&gt;</code> asociada a los controles, y se han proporcionado instrucciones claras para el uso de los mismos.</li>
 
-                <li><strong>Mapas del sitio:</strong> Se ha implementado un mapa del sitio para mejorar la navegación. <br>
-                <em>Criterio de conformidad:</em> 2.4.5 <em>Multiple Ways</em> (AA)</li>
+                <li><strong>Escalabilidad del texto:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.4.4 <em>Resize Text</em> (AA) <br>
+                El sitio web permite escalar el texto mediante las funcionalidades del navegador sin que el diseño se rompa. Los estilos CSS aplicados garantizan que al aumentar el tamaño del texto hasta un 200%, los contenidos siguen siendo legibles y utilizables sin pérdida de funcionalidad.</li>
 
-                <li><strong>Vídeos con Subtítulos:</strong> Todos los vídeos incluyen subtítulos sincronizados para personas con discapacidades auditivas. <br>
-                <em>Criterio de conformidad:</em> 1.2.2 <em>Captions (Prerecorded)</em> (A)</li>
+                <li><strong>Uso de color:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.4.1 <em>Use of Color</em> (A) <br>
+                El color no es el único medio para transmitir información. Las indicaciones o acciones importantes se muestran mediante combinaciones de colores y estilos de texto (por ejemplo, subrayados o negritas) que son claras y accesibles para usuarios con deficiencias visuales o daltónicos.</li>
+
+                <li><strong>Tamaño del texto:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.4.12 <em>Text Spacing</em> (AA) <br>
+                El sitio utiliza CSS para establecer un tamaño de fuente adecuado que asegura la legibilidad sin que el usuario tenga que realizar ajustes adicionales. Además, la separación entre líneas y párrafos sigue las mejores prácticas para facilitar la lectura de largos bloques de texto.</li>
+
+                <li><strong>Orientación:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.3.4 <em>Orientation</em> (AA) <br>
+                El diseño adaptable del sitio, asegurado por las reglas de CSS, permite que el contenido sea accesible tanto en orientación vertical como horizontal, proporcionando una experiencia de usuario coherente en dispositivos móviles.</li>
+
+                <li><strong>Saltar a contenido:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.1 <em>Bypass Blocks</em> (A) <br>
+                El enlace "saltar a contenido" está presente en todas las páginas del sitio, permitiendo a los usuarios saltar directamente al contenido principal sin tener que pasar por todos los menús de navegación.</li>
             </ul>
         </section>
 
@@ -81,7 +103,6 @@
         </div>
         <p><em>&copy; 2024 - Gonzalo Ramos Sánchez y Lorena Pina Pellín para la asignatura Usabilidad y Accesibilidad del grado en Ingeniería Biomédica.</em></p>
     </footer>
-
     
 </body>
 </html>
