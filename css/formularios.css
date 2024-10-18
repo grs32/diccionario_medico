@@ -1,14 +1,19 @@
 form {
-    width: 90%;
+    width: 100%;
     padding: 1em 1em;
     margin: 0 auto;
 }
+
 fieldset {
     border: 3px solid #DAADD7;
     background: #f4f2ff;
     width: 90%;
     padding: 1em 1em;
     margin: 0 auto;
+}
+
+main{
+    margin: 1em;
 }
 
 legend {
