@@ -46,6 +46,7 @@ h2, h3, h4 {
 
 p{
     text-align:justify;
+    margin:1em;
     font-family: Times New Roman, Tahoma, Arial, Verdana, Helvetica;
 }
 
@@ -113,12 +114,13 @@ aside{
 /* Artículos destacados */
 #destacados {
     display: flex;
-    flex-wrap: wrap; /* Permite que los artículos se envuelvan en varias filas */
-    justify-content: space-between; /* Añade espacio entre columnas */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
 #destacados article {
-    flex: 1 1 48%; /* Cada artículo ocupará aproximadamente el 48% del ancho */
+    text-align:center;
+    flex: 1 1 48%; 
     margin: 10px 0; /* Un pequeño margen entre los artículos */
 }
 
@@ -128,7 +130,7 @@ aside{
 
 /* Ajuste de las imágenes */
 #destacados img {
-    max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del artículo */
+    max-width: 100%; 
     height: auto;
 }
 
