@@ -15,13 +15,13 @@
     position: absolute;
     top: -1.5em; /* Oculto fuera de la pantalla */
     left: 0;
-    background: var(--color_resaltado);
+    background: #daadd7;
     color: #111;
     padding: 8px;
     z-index: 1000;
     
 }
-.skip-link:focus, .skip-link:active, .skip-link:hover {
+.skip-link:focus {
     top: 0; /* Muestra cuando tiene el foco */
 }
 
@@ -142,6 +142,7 @@ aside{
 
     #contenedor_principal {
         display: flex; 
+        flex-direction: column;
         width: 100%; 
     }
 
