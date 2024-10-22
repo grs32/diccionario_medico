@@ -98,7 +98,7 @@ main{
 main.doscolumnas{ 
     width:75%;
     left:0em;
-    padding-right: 1em;
+    padding-left: 1em;
 }
 
 aside{
@@ -142,13 +142,12 @@ aside{
 
     #contenedor_principal {
         display: flex; 
-        flex-direction:column-reverse;
         width: 100%; 
     }
 
     main, main.doscolumnas, aside {
         width: 100%; 
-        padding-right: 0em;
+        padding-left: 0em;
     }
 
     aside {
