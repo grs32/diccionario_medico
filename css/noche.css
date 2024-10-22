@@ -3,5 +3,5 @@ body{
   background-color:black;
 }
 img{
-  filter: invert(1) hue-rotate(180 deg);
+  filter: invert(1) hue-rotate(180deg);
 }
