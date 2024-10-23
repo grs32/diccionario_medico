@@ -1,3 +1,11 @@
+/* Definición de variables */
+:root{
+    --color_fondo: #F0F1FF;
+    --color_titulos: #3E7396;
+    --color_titulos_2: #244059;
+    --color_resaltado: #daadd7;
+    --color_fondo_2: #f4f2ff;
+}
 form {
     width: 100%;
     padding: 1em 1em;
@@ -6,7 +14,7 @@ form {
 
 fieldset {
     border: 3px solid #DAADD7;
-    background: #f4f2ff;
+    background: var(--color_fondo_2);
     width: 100%;
     padding: 1em 1em;
     margin: 0 auto;
@@ -19,7 +27,7 @@ main{
 legend {
     font-weight: bold;
     padding: 0 5px;
-    color: #3E7396;
+    color: var(--color_titulos);
     font-size: 1.5em;
 }
 
@@ -34,16 +42,16 @@ input {
     padding: 5px;
 }
 .fieldset-interior {
-    border: 3px dotted #DAADD7;
+    border: 3px dotted var(--color_resaltado);
     width: 25%;
     padding: 0em 1em;
     margin: 0 ;
     
 }
 .boton-enviar {
-        background: #3E7396;
-        color: #DAADD7;
-        border: 3px solid #DAADD7;
+        background: var(--color_titulos);
+        color: var(--color_resaltado);
+        border: 3px solid var(--color_resaltado);
         border-radius: 3em;
         font-weight: bold;
         font-size: 1em;
@@ -54,8 +62,8 @@ input {
         
     }
 .boton-enviar:hover {
-    background: #DAADD7;
-    color: #3E7396;
+    background: var(--color_resaltado);
+    color: var(--color_titulos);
 }
 .peticion {
     width: 90%;
