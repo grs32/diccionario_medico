@@ -1,9 +1,17 @@
+/* Definición de variables */
+:root{
+    --color_fondo: #F0F1FF;
+    --color_titulos: #3E7396;
+    --color_titulos_2: #244059;
+    --color_resaltado: #daadd7;
+    --color_fondo_2: #f4f2ff;
+}
 /* Estilos para las tablas */
 table {
     width: 100%;
     table-layout: auto; /* El ancho de las columnas se ajusta automáticamente al contenido */
     border-collapse: collapse; /* Combina los bordes adyacentes de las celdas en un único borde */
-    background-color: #DAADD7;
+    background-color: var(--color_resaltado);
     margin: 2em 0;
     font-family: "Times New Roman", Tahoma, Arial, Verdana, Helvetica;
 }
@@ -19,7 +27,7 @@ th, td {
 
 /* Estilo específico para los encabezados */
 th {
-    background-color: #3E7396; /* Fondo diferente para los encabezados */
+    background-color: var(--color_titulos); /* Fondo diferente para los encabezados */
     color: white; /* Texto blanco para mayor contraste */
 }
 
@@ -33,5 +41,5 @@ caption {
 
 /* Estilo para alternar colores en las filas del cuerpo de la tabla */
 tbody tr:nth-child(even) {
-    background-color: #F0F1FF; /* Color gris claro para filas pares */
+    background-color: var(--color_fondo); /* Color gris claro para filas pares */
 }
