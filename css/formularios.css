@@ -13,7 +13,7 @@ form {
 }
 
 fieldset {
-    border: 3px solid #DAADD7;
+    border: 3px solid var(--color_resaltado);
     background: var(--color_fondo_2);
     width: 100%;
     padding: 1em 1em;
