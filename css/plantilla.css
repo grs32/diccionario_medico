@@ -5,10 +5,10 @@
 /* Definición de variables */
 :root{
     --color_fondo: #F0F1FF;
-    --color_titulos: #173140;
-    --color_titulos_2: #244059;
-    --color_resaltado: #dfbadd;
-    --color_fondo_2: #D1D8E4;
+    --color_titulos: #315970;
+    --color_titulos_2: #375c7c;
+    --color_resaltado: #edc5eb;
+    --color_fondo_2: #C8D2DF;
 }
 
 /* Estilos para el enlace "Saltar al contenido" */
