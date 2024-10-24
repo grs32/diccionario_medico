@@ -36,6 +36,7 @@
         <section>
             <h3>Características de Accesibilidad Implementadas</h3>
             <ul>
+                <!-- Organizadas por código WCAG -->
                 <li><strong>Tablas Accesibles:</strong> <br>
                 <em>Criterio de conformidad:</em> 1.3.1 <em>Info and Relationships</em> (A) <br>
                 Todas las tablas están correctamente etiquetadas usando las etiquetas <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, y <code>&lt;caption&gt;</code> para asegurar que los usuarios de tecnologías asistivas comprendan la estructura de los datos.</li>
@@ -44,49 +45,61 @@
                 <em>Criterio de conformidad:</em> 1.4.1 <em>Use of Color</em> (A) <br>
                 El color no es el único medio para transmitir información. Las indicaciones o acciones importantes se muestran mediante combinaciones de colores y estilos de texto (por ejemplo, subrayados o negritas) que son claras y accesibles para usuarios con deficiencias visuales o daltónicos.</li>
 
-                <li><strong>Contraste:</strong> <br>
-                <em>Criterio de conformidad:</em> 1.4.3 <em>Contrast (Mínimo)</em> (AA) <br>
-                El color del texto y del fondo tiene un contraste mínimo de 4.5:1 para el texto normal y 3:1 para el texto grande. En la página web, los colores elegidos entre el fondo y el texto aseguran una adecuada legibilidad para los usuarios con baja visión o daltonismo. El CSS aplicado permite mantener este contraste en todas las páginas del diccionario.</li>
+                <li><strong>Control del color del texto y fondo:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.4.3 <em>Contrast (Minimum)</em> (AA) <br>
+                Permitimos a los usuarios elegir entre diferentes temas de color, incluyendo un tema de alto contraste y otro accesible, garantizando siempre un contraste mínimo de 4.5:1 para el texto normal y 3:1 para el texto grande.</li>
 
-                <li><strong>Escalabilidad del texto:</strong> <br>
+                <li><strong>Tamaño de fuente escalable:</strong> <br>
                 <em>Criterio de conformidad:</em> 1.4.4 <em>Resize Text</em> (AA) <br>
-                El sitio web permite escalar el texto mediante las funcionalidades del navegador sin que el diseño se rompa. Los estilos CSS aplicados garantizan que al aumentar el tamaño del texto hasta un 200%, los contenidos siguen siendo legibles y utilizables sin pérdida de funcionalidad.</li>
+                Las hojas de estilo utilizan unidades relativas (rem, em) permitiendo que el texto sea escalable hasta un 200% sin pérdida de funcionalidad o contenido.</li>
 
-                <li><strong>Espaciado de texto:</strong> <br>
+                <li><strong>Uso de texto en lugar de imágenes:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.4.5 <em>Images of Text</em> (AA) <br>
+                Se utilizan estilos CSS en lugar de imágenes para presentar texto, asegurando que el contenido sea escalable y accesible. Las únicas imágenes de texto utilizadas son logotipos o cuando son esenciales para la información.</li>
+
+                <li><strong>Contraste mejorado:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.4.6 <em>Contrast (Enhanced)</em> (AAA) <br>
+                En nuestros temas accesibles y de alto contraste, mantenemos un ratio de contraste mínimo de 7:1 para texto normal y 4.5:1 para texto grande.</li>
+
+                <li><strong>Presentación visual del texto:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.4.8 <em>Visual Presentation</em> (AAA) <br>
+                El texto no está justificado, mejorando la legibilidad para todos los usuarios. Los usuarios pueden seleccionar colores de primer plano y fondo.</li>
+
+                <li><strong>Diseño fluido y adaptable:</strong> <br>
+                <em>Criterio de conformidad:</em> 1.4.10 <em>Reflow</em> (AA) <br>
+                El contenido se puede presentar sin pérdida de información o funcionalidad, y sin necesidad de desplazamiento en dos dimensiones hasta un ancho de 320 píxeles.</li>
+
+                <li><strong>Espaciado de texto adaptable:</strong> <br>
                 <em>Criterio de conformidad:</em> 1.4.12 <em>Text Spacing</em> (AA) <br>
-                Se asegura un espaciado adecuado entre líneas y párrafos para mejorar la legibilidad del contenido.</li>
-
-                <li><strong>Foco visible:</strong> <br>
-                <em>Criterio de conformidad:</em> 2.4.7 <em>Focus Visible</em> (AA) <br>
-                Cuando un elemento interactivo (como un enlace o un botón) es seleccionado o navegado mediante teclado, el CSS asegura que se visualice un borde visible o un cambio de color, facilitando la navegación a los usuarios que utilizan tecnologías asistivas o que prefieren utilizar el teclado.</li>
-
-                <li><strong>Orden de Foco Secuencial:</strong> <br>
-                <em>Criterio de conformidad:</em> 2.4.3 <em>Focus Order</em> (A) <br>
-                Se ha implementado un orden de foco lógico y secuencial en todos los elementos interactivos, lo que permite navegar a través del contenido de manera predecible.</li>
-
-                <li><strong>Propósito de los Enlaces Claro:</strong> <br>
-                <em>Criterio de conformidad:</em> 2.4.4 <em>Link Purpose (In Context)</em> (A) <br>
-                El propósito de cada enlace es claramente identificable por su texto y contexto, para facilitar la comprensión a los usuarios. Ejemplo: <a href="#inicio">Volver al inicio</a>.</li>
-
-                <li><strong>Mapas del sitio:</strong> <br>
-                <em>Criterio de conformidad:</em> 2.4.5 <em>Multiple Ways</em> (AA) <br>
-                Se ha implementado un mapa del sitio para mejorar la navegación.</li>
-
-                <li><strong>Formularios Accesibles:</strong> <br>
-                <em>Criterio de conformidad:</em> 3.3.2 <em>Labels or Instructions</em> (A), 1.3.5 <em>Identify Input Purpose</em> (AA) <br>
-                Los formularios en el sitio web están correctamente etiquetados mediante la etiqueta <code>&lt;label&gt;</code> asociada a los controles, y se han proporcionado instrucciones claras para el uso de los mismos.</li>
-
-                <li><strong>Encabezados Jerárquicos Correctamente Implementados:</strong> <br>
-                <em>Criterio de conformidad:</em> 2.4.6 <em>Headings and Labels</em> (AA) y 2.4.10 <em>Section Headings</em> (AAA) <br>
-                Se ha respetado la jerarquía correcta de los encabezados (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) en las páginas, lo que facilita la navegación para los usuarios que dependen de la estructura de la página para entender el contenido.</li>
+                El espaciado entre líneas es de al menos 1.5 veces el tamaño de la fuente, el espaciado entre párrafos es de al menos 2 veces el tamaño de la fuente, y el espaciado entre letras es ajustable.</li>
 
                 <li><strong>Saltar a contenido:</strong> <br>
                 <em>Criterio de conformidad:</em> 2.4.1 <em>Bypass Blocks</em> (A) <br>
-                El enlace "saltar a contenido" está presente en todas las páginas del sitio, permitiendo a los usuarios saltar directamente al contenido principal sin tener que pasar por todos los menús de navegación.</li>
+                El enlace "saltar a contenido" está presente en todas las páginas del sitio.</li>
 
-                <li><strong>Texto no justificado:</strong> <br>
-                <em>Criterio de conformidad:</em> 1.4.8 <em>Visual Presentation</em> (AAA) <br>
-                En las hojas de estilo accesibles, el texto no está justificado para mejorar la legibilidad, facilitando la lectura para todos los usuarios.</li>
+                <li><strong>Orden de Foco Secuencial:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.3 <em>Focus Order</em> (A) <br>
+                Se ha implementado un orden de foco lógico y secuencial en todos los elementos interactivos.</li>
+
+                <li><strong>Propósito de los Enlaces:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.4 <em>Link Purpose (In Context)</em> (A) <br>
+                El propósito de cada enlace es claramente identificable por su texto y contexto.</li>
+
+                <li><strong>Múltiples vías de navegación:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.5 <em>Multiple Ways</em> (AA) <br>
+                Se proporciona un mapa del sitio y múltiples formas de encontrar contenido.</li>
+
+                <li><strong>Encabezados descriptivos:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.6 <em>Headings and Labels</em> (AA) <br>
+                Los encabezados y etiquetas describen el tema o propósito del contenido.</li>
+
+                <li><strong>Foco visible:</strong> <br>
+                <em>Criterio de conformidad:</em> 2.4.7 <em>Focus Visible</em> (AA) <br>
+                El indicador del foco del teclado es visible y tiene un contraste suficiente.</li>
+
+                <li><strong>Formularios accesibles:</strong> <br>
+                <em>Criterio de conformidad:</em> 3.3.2 <em>Labels or Instructions</em> (A) <br>
+                Todos los elementos interactivos tienen etiquetas claras e instrucciones cuando es necesario.</li>
             </ul>
         </section>
 
