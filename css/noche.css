@@ -1,3 +1,4 @@
+@import url(contraste.css);
 body{
   filter: invert(1) hue-rotate(180deg);
   background-color:black;
