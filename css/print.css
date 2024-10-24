@@ -45,7 +45,7 @@ body:after {
     display: block;
     margin-top: 2cm;
     font-size: 15pt;
-    text-align: center;
+    text-align: justify;
 }
 
 article, img, section {
