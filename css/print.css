@@ -1,4 +1,9 @@
-body { 
+@page {
+    size: A4;
+    margin: 2cm;
+}
+
+body {
     margin: 2cm;
     filter: grayscale(100%);
 }
@@ -31,25 +36,22 @@ nav, .nav, header, footer, .sidebar, .advertisement, .dynamic-content {
     display: none !important;
 }
 
-form, input, button, select, textarea, aside {
+form, input, button, select, textarea, aside, iframe{
     display: none !important;
 }
 
-
 body:after {
-    content: "© Derechos reservados. Solo para uso impreso.";
+    content: "© Derechos reservados. Solo para uso impreso. 2024 - Gonzalo Ramos Sánchez y Lorena Pina Pellín para la asignatura Usabilidad y Accesibilidad del grado en Ingeniería Biomédica.";
     display: block;
     margin-top: 2cm;
     font-size: 15pt;
     text-align: center;
 }
 
-@page {
-    size: A4;
-}
-
-article, table, img {
+article, table, img, section {
     break-inside: avoid;
+    page-break-before: auto;
+    page-break-after: auto;
 }
 
 p {
@@ -63,7 +65,13 @@ table, tr, td, th {
 }
 
 object, embed, script {
-    display: none !important;                 
+    display: none !important;
+}
+
+@media print {
+    .no-imprimir {
+        display: none !important;
+    }
 }
 
 
