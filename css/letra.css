@@ -1,0 +1,38 @@
+h1{
+    font-size: 3em;
+}
+
+h2, h3{
+    font-size: 2.5em;
+}
+
+h4{
+    font-size: 2.25em;
+}
+
+p, a{
+    font-size: 1.5em;
+}
+
+
+
+@media screen and (max-width: 1120px) {
+    #destacados article {
+        flex: 1 1 100%; /* En pantallas pequeñas, cada artículo ocupará el 100% del ancho */
+    }
+
+    #contenedor_principal {
+        display: flex; 
+        flex-direction: column;
+        width: 100%; 
+    }
+
+    main, main.doscolumnas, aside {
+        width: 100%; 
+        padding-left: 0em;
+    }
+
+    aside {
+        margin-bottom: 20px; 
+    }
+}
