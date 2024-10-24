@@ -1,9 +1,9 @@
 /* Definición de variables */
 :root{
     --color_fondo: #F0F1FF;
-    --color_titulos: #3E7396;
+    --color_titulos: #173140;
     --color_titulos_2: #244059;
-    --color_resaltado: #daadd7;
+    --color_resaltado: #dfbadd;
     --color_fondo_2: #D1D8E4;
 }
 form {
