@@ -48,9 +48,14 @@ body:after {
     text-align: center;
 }
 
-article, table, img, section {
+article, img, section {
     break-inside: avoid;
     page-break-before: auto;
+    page-break-after: auto;
+}
+
+table {
+    break-inside: avoid;
     page-break-after: auto;
 }
 
