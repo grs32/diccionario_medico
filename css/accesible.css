@@ -38,6 +38,9 @@ h1, h2, h3, h4, p, a {
     overflow-wrap: break-word !important;
 }
 
+table{
+    display:none;}
+
 h1{
     font-size: 3em !important;
 }
