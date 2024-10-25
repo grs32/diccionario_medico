@@ -14,7 +14,7 @@
 /* Estilos para el enlace "Saltar al contenido" */
 .skip-link {
     position: absolute;
-    top: -1.5em; /* Oculto fuera de la pantalla */
+    top: -1.5em;
     left: 0;
     background: var(--color_resaltado);
     color: black;
@@ -22,8 +22,8 @@
     z-index: 1000;
     
 }
-.skip-link:focus {
-    top: 0; /* Muestra cuando tiene el foco */
+.skip-link:focus, .skip-link:hover {
+    top: 0;
 }
 
 body{
