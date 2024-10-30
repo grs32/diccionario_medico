@@ -113,10 +113,15 @@ aside{
 
 
 /* Artículos destacados */
-#destacados {
+#destacados, #mas_info {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between; 
+}
+
+#mas_info p {
+    flex: 1 1 48%;
+    margin: 0.2em;
 }
 
 #destacados article {
@@ -137,9 +142,11 @@ aside{
     height: auto;
 }
 
+
+
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 814px) {
-    #destacados article {
+    #destacados article, #mas_info p {
         flex: 1 1 100%; /* En pantallas pequeñas, cada artículo ocupará el 100% del ancho */
     }
 
@@ -241,6 +248,7 @@ a:hover, a:active {
 #indiceArticulos ul.clearfix {
     width: 100%;
 }
+
 
 /* Cambiar enlaces por botones*/
 .boton-enlace {
