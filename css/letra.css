@@ -18,7 +18,7 @@ p, a{
 
 @media screen and (max-width: 1120px) {
     #destacados article {
-        flex: 1 1 100%; /* En pantallas pequeñas, cada artículo ocupará el 100% del ancho */
+        flex: 1 1 100%; 
     }
 
     #contenedor_principal {
