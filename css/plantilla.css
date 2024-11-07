@@ -113,13 +113,13 @@ aside{
 
 
 /* Artículos destacados */
-#destacados, #mas_info {
+#destacados, .mas_info {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between; 
 }
 
-#mas_info p {
+.mas_info p {
     flex: 1 1 48%;
     margin: 0.2em;
 }
@@ -146,7 +146,7 @@ aside{
 
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 814px) {
-    #destacados article, #mas_info p {
+    #destacados article, .mas_info p {
         flex: 1 1 100%; /* En pantallas pequeñas, cada artículo ocupará el 100% del ancho */
     }
 
