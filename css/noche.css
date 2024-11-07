@@ -7,6 +7,6 @@ body{
 img, video, iframe{
   filter: invert(1) hue-rotate(180deg);
 }
-#cerebroAlzheimer{
+#cerebroAlzheimer img{
   filter: invert(1) hue-rotate(180deg);
 }
