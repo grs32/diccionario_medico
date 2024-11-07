@@ -77,7 +77,7 @@ header img{
 }
 
 
-iframe, video, .amara-embed{
+iframe, video{
     display: inline;
     width: 100%;
     aspect-ratio: 16/9;
