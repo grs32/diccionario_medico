@@ -67,6 +67,10 @@ figure img{
     width: 100%;
     max-width: 500px;
 }
+.amara {
+    width: 45%;
+    margin: auto;
+}
 
 header img{
     display: block;
