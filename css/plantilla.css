@@ -89,7 +89,7 @@ iframe, video{
     max-width: 500px;
 }
 
-.blog iframe{
+#blog iframe{
     max-width: 100%;
 }
 
