@@ -89,6 +89,10 @@ iframe, video{
     max-width: 500px;
 }
 
+.blog iframe{
+    max-width: 100%;
+}
+
 #contenedor_principal{
     display: flex;
     width: 100%;
