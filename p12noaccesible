@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>P12 | No accesible</title>
+    </head>
+    <body>
+        <h2> Gatos gatos y más gatos </h2>
+        <img src="imagenes/logo.jpg>
+        <h1> Nuestro top 3 de nombres favoritos de gatos: </h1>
+          <p> 1. GatoGordo </p>
+          <p> 2. Gatencio </p>
+          <p> 3. Firulais </p>
+        <h1> Tipos de gatos: </h1>
+          <p> * Gato negro: <img src="imagenes/gatonegro.jpg"> </p>
+          <p> * Gato persa: <img src="imagenes/gatopersa.webp"> </p>
+          <p> * Gato egipcio: <img src="imagenes/gatoegipcio.jpeg"> </p>
+    </body>
+</html>
